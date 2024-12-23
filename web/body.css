@@ -1,0 +1,113 @@
+/* chia bố cục body thành 2 phần */
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.sub-nav {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 43px ;
+    align-items: center; /* Căn chỉnh giữa các phần tử trong sub-nav */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main-section-2, .main-section-1 {
+    margin: 20px;
+}
+
+/* FAQ Section */
+.faq-container, .guide-container, .support-container {
+    background-color: #e9f2ff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* FAQ Item */
+.faq-item {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #d0e8ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+/* Video Guide */
+.guide-container video {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.guide-container video:hover {
+    transform: scale(1.02); /* Phóng to video khi hover */
+}
+
+/* Support Links Section */
+.support-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0e8ff;
+    transition: all 0.3s ease;
+}
+
+.support-list li:hover {
+    background-color: #d0e8ff;
+    transform: translateX(10px); /* Dịch chuyển item khi hover */
+}
+
+
+/* Main Section - Thông tin người dùng và các bài viết */
+.main-section-1, .main-section-2 {
+    background: linear-gradient(145deg, #ffffff, #d0e8ff); /* Gradient nền */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.main-section-1:hover, .main-section-2:hover {
+    transform: scale(1.02); /* Tăng kích thước khi hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng khi hover */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}

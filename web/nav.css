@@ -1,0 +1,69 @@
+/* Styling for the vertical navigation */
+nav {
+    width: 200px; /* Chiều rộng của thanh nav */
+    background-color: #333; /* Màu nền của thanh nav */
+    height: 100%; /* Chiều cao của thanh nav bằng với chiều cao của màn hình */
+    position: fixed; /* Định vị thanh nav cố định */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ các dấu chấm đầu dòng */
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px; /* Khoảng cách giữa các mục menu */
+    
+}
+
+
+nav ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân của link */
+    color: #fff; /* Màu của văn bản trong link */
+    display: block; /* Hiển thị block để nó chiếm toàn bộ chiều rộng của li */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Màu nền của link khi hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.login-menu {
+    
+    background-color: #fff; /* Màu nền cho menu */
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước của phần tử */
+}
+
+
+/* Đặt nền gradient động cho thanh nav */
+nav {
+    background-image: linear-gradient(45deg, #3f5cb9, #00c6ff); /* Gradient mặc định */
+    background-size: 400% 400%; /* Đặt kích thước gradient lớn hơn để tạo hiệu ứng chuyển động */
+    animation: gradientAnimation 5s ease infinite; /* Áp dụng animation */
+}
+  
+  /* Định nghĩa keyframes cho hiệu ứng gradient động */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  

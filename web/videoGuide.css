@@ -1,0 +1,21 @@
+.guide-container {
+    background-color: white; /* Màu nền trắng */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    width: 100%; /* Chiều rộng 97% của bố cục */
+    margin: 0 auto; /* Căn giữa div */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.guide-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Màu chữ */
+}
+
+video {
+    width: 100%; /* Chiều rộng video chiếm 100% chiều rộng của div */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa của video */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+}

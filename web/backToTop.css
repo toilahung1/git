@@ -1,0 +1,28 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Khoảng cách từ dưới */
+    right: 20px;  /* Khoảng cách từ phải */
+    background-color: #007bff; /* Màu nền nút */
+    color: white; /* Màu chữ */
+    border: none;
+    border-radius: 50%; /* Bo tròn nút */
+    padding: 0; /* Xóa padding nếu đã có width và height */
+    width: 60px; /* Chiều rộng của nút */
+    height: 60px; /* Chiều cao của nút */
+    font-size: 18px; /* Kích thước chữ */
+    display: none; /* Ban đầu không hiển thị */
+    text-align: center; /* Căn giữa chữ */
+    line-height: 60px; /* Căn giữa chữ theo chiều dọc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease; /* Thêm hiệu ứng mờ dần */
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; /* Màu khi hover */
+}
+
+/* Back to Top Button */
+#backToTopBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Phóng to nút khi hover */
+}

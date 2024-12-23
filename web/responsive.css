@@ -1,0 +1,64 @@
+/* Điều chỉnh cho màn hình nhỏ (di động) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   
+   .video {
+    height: 200px;
+    width: 100%;
+   }
+
+   .sub-nav {
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 43px ;
+    align-items: center; /* Căn chỉnh giữa các phần tử trong sub-nav */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    grid-template-rows: 1fr 1fr;
+}
+    .login-menu {
+        margin: 0;
+        margin-left: 180px;
+    }
+
+    #welcomeMessage {
+        display: none;
+    }
+
+    .a {
+        margin: 2px;
+    }
+
+    .sub-nav{
+        margin-bottom: 20px;
+    }
+
+    .back-to-top{
+        display: none;
+    }
+
+    
+    .main-section-1 {
+        height: 104%;
+        
+    }
+
+    .main-section-2 {
+        height: 100%;
+        margin-top: 170px;
+    }
+
+
+    .container {
+        display: inline-block;
+       
+    }
+    
+}
+

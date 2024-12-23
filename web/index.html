@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Submenu with Login</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="videoGuide.css">
+    <link rel="stylesheet" href="supportLinks.css">
+    <link rel="stylesheet" href="backToTop.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script defer src="menu.js"></script>
+    <script defer src="question.js"></script>
+    <script defer src="scroll.js"></script>
+    <script defer src="nav.js"></script>
+    <script defer src="login.js"></script>
+
+
+</head>
+<body>
+</div>  
+    <nav class="hidden" style="overflow-y: auto;">
+        <ul class="nav">
+            
+            <!-- Facebook Section -->
+            <li class="scroll-to-section">
+                <a href="#top" class="toggle-link" data-target="facebookSubmenu">Facebook</a>
+                <div class="submenu" id="facebookSubmenu">
+                    <a href="#profile">Khôi phục tài nguyên số</a>
+                    <a href="#friends">Công cụ bảo hộ thương hiệu và bản quyền</a>
+                    <a href="#messages">Giỏ hàng livestream cho các fanpage</a>
+                    <a href="#photos">Build hệ thống cho các tài nguyên số</a>
+                    <a href="#videos">Cung cấp tài khoản theo yêu cầu</a>
+                    <a href="#settings">Quảng cáo facebook và instagram</a>
+                    <a href="#groups">Kích hoạt tính năng quảng cáo livestream</a>
+                    <a href="#events">Xác minh tick xanh</a>
+                    <a href="#marketplace">Kiếm tiền quảng cáo trong luồng</a>
+                </div>
+            </li>
+            
+            <!-- Zalo Section -->
+             <div>
+            <li class="scroll-to-section">
+                <a href="#about" class="toggle-link" data-target="zaloSubmenu">Zalo</a>
+                <div class="submenu" id="zaloSubmenu">
+                    <a href="#profile">Gửi tin nhắn hàng loạt</a>
+                    <a href="#friends">Quản lý bạn bè</a>
+                    <a href="#messages">Quảng cáo Zalo</a>
+                    <a href="#photos">Tích hợp API Zalo</a>
+                    <a href="#videos">Xây dựng hệ thống OA</a>
+                </div>
+            </li>
+            <!-- Tiktok Section -->
+            <li class="scroll-to-section">
+                <a href="#services" class="toggle-link" data-target="tiktokSubmenu">Tiktok</a>
+                <div class="submenu" id="tiktokSubmenu">
+                    <a href="#profile">Quản lý tài khoản</a>
+                    <a href="#friends">Chạy quảng cáo video</a>
+                    <a href="#messages">Phân tích xu hướng</a>
+                    <a href="#photos">Tăng tương tác tài khoản</a>
+                    <a href="#videos">Cung cấp tài khoản verified</a>
+                </div>
+            </li>
+        </div>
+            <!-- Youtube Section -->
+            <li class="scroll-to-section">
+                <a href="#portfolio" class="toggle-link" data-target="youtubeSubmenu">Youtube</a>
+                <div class="submenu" id="youtubeSubmenu">
+                    <a href="#profile">Quản lý kênh</a>
+                    <a href="#friends">Tăng lượt xem</a>
+                    <a href="#messages">Kiếm tiền quảng cáo</a>
+                    <a href="#photos">Chỉnh sửa video chuyên nghiệp</a>
+                    <a href="#videos">Tối ưu hóa SEO video</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--Body: start-->
+    <!--Quản lý chung-->
+    <div class="sub-nav">
+        <div class="wrapper">
+            <h6 style="color: #3f5cb9;">Quản Lý Chung</h4>
+                <h6 style="padding-left: 50px; color: #696868;">Tổng quan</h5>
+        </div>
+        
+            <div class="login-menu">
+                <button id="toggleNav" class= "a btn btn-primary" style="background-color: #3f5cb9;">Mở Menu</button>
+                <button id="logoutBtn" class="btn btn-danger a" style="display:none;">Đăng Xuất</button>
+                <button class="login-btn btn btn-primary a" onclick="window.location.href='login.html'">Đăng Nhập</button>
+                <button class="register-btn btn btn-primary a" onclick="window.location.href='register.html'">Đăng Ký</button>
+                <span id="welcomeMessage" style="color: #3f5cb9; margin-top: 7px;"></span>
+            </div>  
+    </div>
+    <!---->
+    <div class="main-layout">
+        <div class="main-section-1">
+            <div class="user-info-section">
+                <!-- User Information Section -->
+                <div class="user-info">
+                    <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="User Logo" class="user-logo">
+                    <span class="user-email">user@gmail.com</span>
+                    <span class="user-type">đại lý</span>
+                </div>
+                <hr>
+                <!-- Account Details Section -->
+                <div class="account-details">
+                    <div class="detail-item">
+                        <span class="label">Số dư:</span> <span class="value">500,000 VND</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Đã nạp:</span> <span class="value">1,000,000 VND</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Đã sử dụng:</span> <span class="value">500,000 VND</span>
+                    </div>
+                </div>
+            </div>
+            <!--bài đăng-->
+            <div class="container">
+                <!-- Example of a User Post -->
+                <div class="post">
+                    <div class="user-info">
+                        <img src="https://via.placeholder.com/50" alt="User Logo" class="user-logo">
+                        <div class="post-info">
+                            <span class="user-name">Admin User</span>
+                            <span class="post-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae vitae mollitia, ipsa aspernatur voluptate nisi sit. Nobis aspernatur distinctio in illum doloremque officia libero praesentium reiciendis impedit laboriosam! Ducimus exercitationem deleniti nostrum. Rem, velit? Eum veritatis deleniti est mollitia non ab alias unde ipsa vero culpa, ut accusantium impedit?</p>
+                        <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                    </div>
+                </div>
+
+                <!-- Additional Posts -->
+                <!-- Repeat this block for each post -->
+                <div class="post">
+                    <div class="user-info">
+                        <img src="https://via.placeholder.com/50" alt="User Logo" class="user-logo">
+                        <div class="post-info">
+                            <span class="user-name">Admin User</span>
+                            <span class="post-time">3 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis possimus animi omnis laboriosam, iusto necessitatibus vel placeat hic quisquam accusamus? Iste ullam asperiores eveniet voluptatibus dolore atque quos omnis, molestiae provident? Architecto asperiores voluptatibus sint doloremque ipsam magnam delectus autem enim, ducimus ipsa beatae natus sunt. Eligendi accusantium officiis non adipisci ipsa, inventore voluptatem error perspiciatis quis facilis sint molestiae fugit blanditiis enim rem perferendis nobis necessitatibus at amet?.</p>
+                        <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                    </div>
+                </div>    
+                            <!-- Repeat this block for each post -->
+                            <div class="post">
+                                <div class="user-info">
+                                    <img src="https://via.placeholder.com/50" alt="User Logo" class="user-logo">
+                                    <div class="post-info">
+                                        <span class="user-name">Admin User</span>
+                                        <span class="post-time">3 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis possimus animi omnis laboriosam, iusto necessitatibus vel placeat hic quisquam accusamus? Iste ullam asperiores eveniet voluptatibus dolore atque quos omnis, molestiae provident? Architecto asperiores voluptatibus sint doloremque ipsam magnam delectus autem enim, ducimus ipsa beatae natus sunt. Eligendi accusantium officiis non adipisci ipsa, inventore voluptatem error perspiciatis quis facilis sint molestiae fugit blanditiis enim rem perferendis nobis necessitatibus at amet?.</p>
+                                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                                </div>
+                            </div>   
+                                        <!-- Repeat this block for each post -->
+                <div class="post">
+                    <div class="user-info">
+                        <img src="https://via.placeholder.com/50" alt="User Logo" class="user-logo">
+                        <div class="post-info">
+                            <span class="user-name">Admin User</span>
+                            <span class="post-time">3 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis possimus animi omnis laboriosam, iusto necessitatibus vel placeat hic quisquam accusamus? Iste ullam asperiores eveniet voluptatibus dolore atque quos omnis, molestiae provident? Architecto asperiores voluptatibus sint doloremque ipsam magnam delectus autem enim, ducimus ipsa beatae natus sunt. Eligendi accusantium officiis non adipisci ipsa, inventore voluptatem error perspiciatis quis facilis sint molestiae fugit blanditiis enim rem perferendis nobis necessitatibus at amet?.</p>
+                        <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                    </div>
+                </div>   
+
+        </div>
+    </div>
+    <div class="main-section-2">
+        <div class="faq-container">
+            <h2>Các câu hỏi thường gặp</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 1
+                </h3>
+                <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tincidunt nunc. Integer in dui vel turpis pretium commodo.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 2
+                </h3>
+                <p class="faq-answer">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 3
+                </h3>
+                <p class="faq-answer">Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 4
+                </h3>
+                <p class="faq-answer">Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 5
+                </h3>
+                <p class="faq-answer">Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <i class="faq-icon">+</i> Câu hỏi 6
+                </h3>
+                <p class="faq-answer">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+        </div>
+        <!--Hướng dẫn sử dụng video-->
+        <div class="guide-container">
+            <h2>Hướng dẫn sử dụng web</h2>
+            <video class="video" controls>
+                <source src="video.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+        </div>
+        <!--Support links-->
+        <div class="support-container">
+            <h2>Hỗ trợ đại lý</h2>
+            <hr>
+            <ul class="support-list">
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/480px-Facebook_Logo_%282019%29.png" alt="Meta hỗ trợ" class="support-icon">
+                    Meta hỗ trợ
+                </li>
+                <li>
+                    <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="Zalo hỗ trợ" class="support-icon">
+                    Zalo hỗ trợ
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/free-vector/megaphone-loudspeaker-illustration-element-design_343694-2625.jpg" alt="Kênh thông báo Meta" class="support-icon">
+                    Kênh thông báo Meta
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/premium-vector/youtube-logo-with-red-square_876006-17.jpg" alt="YouTube hỗ trợ" class="support-icon">
+                    YouTube hỗ trợ
+                </li>
+                <li>
+                    <img src="https://e7.pngegg.com/pngimages/759/922/png-clipart-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-thumbnail.png" alt="Liên hệ trực tiếp" class="support-icon">
+                    Liên hệ trực tiếp
+                </li>
+            </ul>
+        </div>
+        <!--Nút quay trở lại đầu trang-->
+        <button id="backToTopBtn" class="back-to-top">↑</button>
+    </div>
+    <!--Body: end-->
+</body>
+</html>

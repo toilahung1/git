@@ -1,0 +1,11 @@
+/* Register page styles */
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+

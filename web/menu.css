@@ -1,0 +1,134 @@
+/* Cấu trúc body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8ff;
+}
+
+/* Navbar Style */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Navigation menu items */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+/* Submenu Style */
+.submenu {
+    display: none; /* Initially hidden */
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Prevent content overflow */
+    background-color: #003366;
+    border-radius: 8px;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Smooth transition for height */
+    padding: 0 20px; /* Add padding to submenu */
+}
+
+/* Show submenu when expanded */
+.submenu.show {
+    display: block;
+    max-height: 500px; /* Set max-height to a value that allows for expansion */
+    padding: 10px 20px; /* Add padding when expanded */
+}
+
+.submenu a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submenu links */
+.submenu a:hover {
+    background-color: #005b80;
+}
+
+/* Style for the content of the page */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 0px; /* Ensure content isn't hidden behind the fixed menu */
+    
+}
+
+
+/* Styling for the vertical navigation */
+nav {
+    width: 200px; /* Chiều rộng của thanh nav */
+    background-color: #333; /* Màu nền của thanh nav */
+    height: 100vh; /* Chiều cao của thanh nav bằng với chiều cao của màn hình */
+    position: fixed; /* Định vị thanh nav cố định */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ các dấu chấm đầu dòng */
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px; /* Khoảng cách giữa các mục menu */
+    
+}
+
+
+nav ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân của link */
+    color: #fff; /* Màu của văn bản trong link */
+    display: block; /* Hiển thị block để nó chiếm toàn bộ chiều rộng của li */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Màu nền của link khi hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo cột */
+    height: 100vh; /* Chiều cao của container bằng chiều cao màn hình */
+}
+
+.content {
+    flex: 1; /* Phần nội dung chiếm không gian còn lại */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
